@@ -1,0 +1,44 @@
+.cardImage {
+  width: 100%;
+  height: 40vh;
+  object-fit: contain;
+  margin-top: 1vh;
+  background-color:  #1a1a1a ;
+  padding: 1.5vh;
+  
+}
+
+.description {
+  text-align: center;
+  background-color: red;
+  border-radius: 25px;
+  height: 3vh;
+  color: white;
+}
+
+.buttons {
+  width: 100%
+ 
+}
+
+ul {
+list-style-type: none;
+}
+
+.Jumbotron {
+  color: midnightblue;
+  font-weight: bolder;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.cards {
+  width: 45vh;
+  min-height: 70vh;
+  color: #262626;
+}
+
+.cardbody {
+  background-color: rgb(224, 222, 222);
+  margin-bottom: 2vh;
+}

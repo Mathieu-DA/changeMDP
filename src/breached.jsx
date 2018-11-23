@@ -32,7 +32,7 @@ class Breached extends React.Component {
             </UncontrolledCollapse>
             {this.props.site.Domain === "" ? <div></div> : 
             <a href={"https://" + this.props.site.Domain} target="_blank" rel="noopener noreferrer">
-            <Button className="buttons" color="primary" style={{ marginBottom: '1rem' }}>Change ton MdP</Button></a>}
+            <Button className="buttons" color="primary" style={{ marginBottom: '1rem' }}>Aller sur {(this.props.site.Domain)[0].toUpperCase() + (this.props.site.Domain).slice(1).toLowerCase()}</Button></a>}
           </CardBody>
         </ Card>
       </div>

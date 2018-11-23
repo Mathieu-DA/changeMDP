@@ -3,7 +3,8 @@
 body {
   background-color: rgb(39, 4, 6);
   margin-right: 2.5vh;
-  color: #f2f2f2
+  color: #f2f2f2;
+  margin: 0;
 }
 
 h1 {text-align: center}
@@ -22,6 +23,14 @@ h1 {text-align: center}
 
 .pwned {
   text-align: center;
+  background-color: maroon;
+  width: 100;
+}
+
+.notPwned {
+  text-align: center;
+  background-color: rgb(8, 8, 63);
+  width: 100;
 }
 
 .input {
@@ -40,7 +49,7 @@ input{
 
 
 .bien {
-  animation: cssAnimation 0s 1s forwards;
+  animation: cssAnimation 0s 2s forwards;
   visibility: hidden;
 }
 

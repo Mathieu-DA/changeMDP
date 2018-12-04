@@ -7,17 +7,19 @@ class Breached extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      logo: "https://haveibeenpwned.com/Content/Images/PwnedLogos/" + this.props.site.Name + "." + this.props.site.LogoType,
+      // logo: "https://haveibeenpwned.com/Content/Images/PwnedLogos/" + this.props.site.Name + "." + this.props.site.LogoType,
       id: this.props.site.Name.replace(/[0-9]/g, '')
     };
   }
+
+  
 
 
   render() {
     return (
       <div>
         <Card className="cards">
-          <CardImg className="cardImage" top width="100%" src={this.state.logo} alt={this.props.site.Name} />
+          <CardImg className="cardImage" top width="100%" src={this.props.site.LogoPath} alt={this.props.site.Name} />
           <CardBody>
             <CardTitle><u>Site piraté</u>: <p>{this.props.site.Name}</p></CardTitle>
             <p className="lead"><u>Données compromises</u>: {this.props.site.DataClasses.map(c => <span>{c}, </span>)}</p>
